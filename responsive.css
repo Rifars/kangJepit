@@ -1,0 +1,33 @@
+
+/*Responsive*/
+@media screen and (max-width: 1286px) {
+	 /*card*/
+	 .card {
+		width: 250px;
+		height: 300px;
+	 }
+}
+
+@media screen and (max-width: 886px) {
+	/*card*/
+	.card-flex {
+		flex-wrap: wrap;
+	}
+	.card {
+		width: 250px;
+		height: 350px;
+		margin-bottom: 30px;
+	 }
+}
+
+@media screen and (max-width: 586px) {
+	/*card*/
+	.card-flex {
+		flex-wrap: wrap;
+	}
+	.card {
+		width: 80%;
+		height: 400px;
+		margin-bottom: 30px;
+	 }
+}

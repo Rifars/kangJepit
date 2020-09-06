@@ -1,0 +1,223 @@
+*{margin: 0; padding: 0;}
+body {font-family:sans-serif; }
+.container {width: 90%;	margin: auto;}
+.container-flex {display:flex; width:100%; height:50px; margin:auto; justify-content: space-between;}
+/*toggle hamburger*/
+nav .hamburger-button.hamburger {transform:translateX(0); transition:.3s; }
+nav .hamburger-button .button.no-margin{ transition:.3s;}
+nav .hamburger-button .button.no-margin span:nth-child(2){width: 20px; transform: translateX(7px);transition:.3s;}
+nav {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 50px;
+}
+nav .hamburger-button {
+	display: flex;
+	transform: translateX(-310px);
+	transition: .3s; 
+	width: 40%; 
+}
+nav .hamburger-button ul {
+	height: 400px;
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	list-style: none;
+	justify-content: space-evenly;
+	padding: 10px;
+	box-sizing: border-box;
+}
+nav .hamburger-button ul li  {padding-left: 10px; border-bottom:2px solid #303030;}
+nav .hamburger-button ul li:nth-child(7){margin-bottom: 10px;}
+nav .hamburger-button ul li a {
+	display: inline-block;
+	color: #303030;
+	margin-bottom: 5px;
+	text-decoration: none;
+	font-size: 16px;
+}
+nav .hamburger-button ul li a:hover{color: #e43477;}
+nav .hamburger-button .button {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	cursor: pointer;
+	transition: .3s;
+	margin-left: 25px;
+}
+nav .hamburger-button .button span {
+	width: 35px;
+	height: 5px;
+	border-radius: 25px;
+	background-color: #303030;
+	transition:.3s;
+
+}
+nav .hamburger-button .header {
+	width: 140px;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+nav .hamburger-button .header h4{
+	font-family: pristina;
+	font-size: 25px;
+	color: #303030;
+}
+nav .main {
+	position: relative;
+	right: 0;
+	width: 55%;
+	height: 100%;
+	align-items: center;
+	display: flex;
+	flex-direction: row-reverse;
+	margin: auto;
+}
+nav .main .nav-icon {
+	width: 130px;
+	display: flex;
+	justify-content: space-between;
+}
+nav .main .nav-icon span i{
+	position: relative;
+	width:30px;
+	height: 30px; 
+	line-height: 30px;
+	text-align: center;
+	font-size: 30px;
+	display: inline-block;
+	color: #303030;
+	cursor: pointer;
+}
+nav .main .nav-icon span i:hover {color: #e43477;}
+/*hero*/
+
+.hero {
+	width: 100%;
+	height: 500px;
+	background-image: url("hero.jpg");
+	background-position: center 630px;
+	background-size: cover;
+}
+
+/* populer */
+.populer {
+	max-width: 100%;
+	height: 400px;
+	text-align: center;
+}
+.populer .header h1{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-weight: normal;
+	font-size: 28px;
+	text-transform: uppercase;
+}
+/*card*/
+.card-flex{
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%
+	height:100%;
+}
+.card {
+	width: 250px;
+	height: 320px;
+	background-color: #eaeaea;
+	position: relative;
+}
+.card .card-header h3{
+	margin-top: 20px;
+	margin-bottom: 5px; 
+	font-size: 17px;
+	text-transform: uppercase;
+}
+/*main*/
+.card-main {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.card-main .card-img {width: 80%;}
+.card-main .card-img img{
+	height: 180px;
+	width: 180px;
+	margin-right: -25px;
+}
+.card-main .pilihan-warna{ width: 20%; padding-right: 5px; }
+.card-main .pilihan-warna .warna.merah{background-color:#e43477; }
+.card-main .pilihan-warna .warna.ungu{background-color:#7f31bc; }
+.card-main .pilihan-warna .warna:hover {filter: brightness(.6);}
+.card-main .pilihan-warna .warna{
+	cursor: pointer;
+	background-color: #009888;
+	width: 30px;
+	height: 30px;
+	margin:15px;
+}
+/*harga*/
+.card .harga{margin-top: 10px;}
+/*card-footer*/
+.card .card-footer {
+	display: flex;
+	justify-content: space-around;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #a08886;
+	height: 15%;
+	padding-left: 5px;
+	padding-right: 5px;
+	box-sizing: border-box;
+	align-items: center;
+}
+.card .card-footer .button-beli button{
+	width: 100px;
+	height: 30px;
+	border: none;
+	outline: none;
+	border-radius: 25px;
+	font-weight: bold;
+	background-color: #4b3446;
+	color: #eee;
+	cursor: pointer;
+}
+.card .card-footer .button-beli button:hover {filter: brightness(.7);}
+.card-footer .icon-tambahan {
+	display: flex;
+	justify-content: space-around;
+	width: 40%;
+}
+.card-footer .icon-tambahan i {	font-size: 20px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
