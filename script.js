@@ -3,4 +3,65 @@ let hamburgerButton = document.querySelector(".hamburger-button .button");
  	let hamburgerButtonUL = document.querySelector(".hamburger-button");
  	hamburgerButtonUL.classList.toggle("hamburger");
  	hamburgerButton.classList.toggle("no-margin");
- });   
+ });  
+
+
+// butuh pembenaran script
+let warna = document.querySelectorAll(".pilihan-warna .warna");
+let img = document.querySelectorAll(".card-img img");
+let angka = [
+				[0,1,2],
+				[3,4,5],
+				[6,7,8]
+];
+
+angka[0].forEach(function(i){
+	warna[i].addEventListener('click',function(){
+		img[0].setAttribute('src', 'img/' + warna[i].className + ".png");
+	});	
+});
+angka[1].forEach(function(i){
+	warna[i].addEventListener('click',function(){
+		img[1].setAttribute('src', 'img/' + warna[i].className + ".png");
+	});	
+});
+
+angka[2].forEach(function(i){
+	warna[i].addEventListener('click',function(){
+		img[2].setAttribute('src', 'img/' + warna[i].className + ".png");
+	});	
+});
+
+
+
+
+
+// let warna = document.querySelectorAll(".pilihan-warna .warna");
+// let warnaSatu = document.querySelectorAll(".dua .warna");
+// warnaSatu.forEach(function(i){
+// 	i.addEventListener('click',function(){
+// 		let img = document.querySelectorAll(".card-img img");
+// 		img[1].setAttribute('src', 'img/' + i.className + ".png");
+// 	});
+// });
+
+
+// let warnaDua = document.querySelectorAll(".dua .warna");
+// warnaDua.forEach(function(i){
+// 	i.addEventListener('click',function(){
+// 		let img = document.querySelectorAll(".card-img img");
+// 		img[1].setAttribute('src', 'img/' + i.className + ".png");
+// 	});
+// });
+
+
+// let warnaTiga = document.querySelectorAll(".tiga .warna");
+// warnaTiga.forEach(function(i){
+// 	i.addEventListener('click',function(){
+// 		let img = document.querySelectorAll(".card-img img");
+// 		img[2].setAttribute('src', 'img/' + i.className + ".png");
+// 	});
+// });
+
+
+// done

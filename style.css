@@ -128,11 +128,14 @@ nav .main .nav-icon span i:hover {color: #e43477;}
 	height:100%;
 }
 .card {
+	border-radius: 10px 10px 0 0;
 	width: 250px;
 	height: 320px;
 	background-color: #eaeaea;
 	position: relative;
+	box-shadow: 0 0 5px #333;
 }
+
 .card .card-header h3{
 	margin-top: 20px;
 	margin-bottom: 5px; 
@@ -150,12 +153,16 @@ nav .main .nav-icon span i:hover {color: #e43477;}
 	height: 180px;
 	width: 180px;
 	margin-right: -25px;
+
 }
+
+.card-main .pilihan-warna .warna:hover {border: 2px solid #aaa;}
 .card-main .pilihan-warna{ width: 20%; padding-right: 5px; }
 .card-main .pilihan-warna .warna.merah{background-color:#e43477; }
 .card-main .pilihan-warna .warna.ungu{background-color:#7f31bc; }
-.card-main .pilihan-warna .warna:hover {filter: brightness(.6);}
+/*.card-main .pilihan-warna .warna:hover {filter: brightness(.6);}*/
 .card-main .pilihan-warna .warna{
+	border:2px solid rgba(255,255,255,0);
 	cursor: pointer;
 	background-color: #009888;
 	width: 30px;
@@ -189,13 +196,13 @@ nav .main .nav-icon span i:hover {color: #e43477;}
 	color: #eee;
 	cursor: pointer;
 }
-.card .card-footer .button-beli button:hover {filter: brightness(.7);}
+/*.card .card-footer .button-beli button:hover {filter: brightness(.7);}*/
 .card-footer .icon-tambahan {
 	display: flex;
 	justify-content: space-around;
 	width: 40%;
 }
-.card-footer .icon-tambahan i {	font-size: 20px;}
+.card-footer .icon-tambahan i {	font-size: 20px; color: #4b3446; cursor: pointer;}
 
 
 
