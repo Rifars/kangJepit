@@ -1,10 +1,13 @@
 *{margin: 0; padding: 0;}
 body {font-family:sans-serif; }
+@font-face{
+	font-family: 'pristina';
+	src:url('font/pristina.ttf') format('truetype');
+}
 .container {width: 90%;	margin: auto;}
 .container-flex {display:flex; width:100%; height:50px; margin:auto; justify-content: space-between;}
 /*toggle hamburger*/
-nav .hamburger-button.hamburger {transform:translateX(0); transition:.3s; }
-nav .hamburger-button .button.no-margin{ transition:.3s;}
+
 nav .hamburger-button .button.no-margin span:nth-child(2){width: 20px; transform: translateX(7px);transition:.3s;}
 nav {
 	display: flex;
@@ -14,11 +17,15 @@ nav {
 }
 nav .hamburger-button {
 	display: flex;
-	transform: translateX(-310px);
 	transition: .3s; 
 	width: 40%; 
+	position: relative;
 }
+nav .hamburger-button ul.hamburger {transform:translateX(0); transition:.3s; }
 nav .hamburger-button ul {
+	margin-top: 35px;
+	transition:.3s;
+	transform: translateX(-320px);
 	height: 400px;
 	width: 300px;
 	display: flex;
@@ -49,7 +56,10 @@ nav .hamburger-button .button {
 	align-items: center;
 	cursor: pointer;
 	transition: .3s;
-	margin-left: 25px;
+	transform: translateX(45px);
+	position: absolute;
+	left: -15px;
+	top: 0;
 }
 nav .hamburger-button .button span {
 	width: 35px;
@@ -61,27 +71,34 @@ nav .hamburger-button .button span {
 }
 nav .hamburger-button .header {
 	width: 140px;
+	background-color: skyblue;
 	justify-content: center;
 	display: flex;
 	align-items: center;
+	position: absolute;
+	left: 35px;
+	top: 50%;
 }
 nav .hamburger-button .header h4{
-	font-family: pristina;
+	font-family: 'pristina';
 	font-size: 25px;
 	color: #303030;
+	transform: translateX(45px);
+	position: absolute;
+
 }
 nav .main {
 	position: relative;
 	right: 0;
-	width: 55%;
+	width: 15%;
 	height: 100%;
 	align-items: center;
 	display: flex;
 	flex-direction: row-reverse;
-	margin: auto;
+	justify-content: space-evenly;
 }
 nav .main .nav-icon {
-	width: 130px;
+	width: 140px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -91,7 +108,7 @@ nav .main .nav-icon span i{
 	height: 30px; 
 	line-height: 30px;
 	text-align: center;
-	font-size: 30px;
+	font-size: 25px;
 	display: inline-block;
 	color: #303030;
 	cursor: pointer;
@@ -196,6 +213,7 @@ nav .main .nav-icon span i:hover {color: #e43477;}
 	color: #eee;
 	cursor: pointer;
 }
+.card .card-footer .button-beli button:hover{background-color: #eaeaea; color:#4b3446; }
 /*.card .card-footer .button-beli button:hover {filter: brightness(.7);}*/
 .card-footer .icon-tambahan {
 	display: flex;
@@ -203,26 +221,91 @@ nav .main .nav-icon span i:hover {color: #e43477;}
 	width: 40%;
 }
 .card-footer .icon-tambahan i {	font-size: 20px; color: #4b3446; cursor: pointer;}
+.card-footer .icon-tambahan i:hover {color: #eaeaea}
 
+/* bagian hero*/
+.search {
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	position: relative;
+}
 
+.search .colom {
+	margin: auto;
+	position: absolute;
+	top: 230px;
+}
 
+.search .colom input {
+	width: 500px;
+	height: 40px;
+	outline: none;
+	border: none;
+	padding-left: 15px;
+	font-size: 16px;
+	color: #333;
+	font-weight: bold;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
 
+.search .colom span {
+	width: 40px; 
+	height: 40px;
+	border-radius: 10px;
+	position: absolute;
+	background-color: white;
+	display: inline-block;
+	margin-left: 5px;
+	text-align: center;
+}
 
+.search .colom span i{
+	font-size: 20px;
+	color: #333;
+	line-height: 40px;
+	cursor: pointer;
+}
 
+.search .colom input:hover, .search .colom span:hover, .search .colom input:focus, .search .colom span:focus{
+	box-shadow: 0px 3px 3px #a08886;
+}
 
+.search .teks {
+	position: absolute;
+	top: 300px;
+	text-align: center;
+}
 
+.search .teks h1 {
+	font-family: "pristina";
+	color: white;
+}
 
+.sosial-media ul{
+	width: 200px;
+	height: 200px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	position: absolute;
+	top:200px;
+	right: 0;
+}
 
-
-
-
-
-
-
-
-
-
-
+.sosial-media ul li {
+	width: 100%;
+	height: 40px;
+	background-color: white;
+	line-height: 40px;
+	padding-left: 20px;
+	box-sizing: border-box;
+	list-style: none;
+}
 
 
 
