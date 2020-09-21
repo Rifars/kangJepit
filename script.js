@@ -1,3 +1,4 @@
+
 let hamburgerButton = document.querySelector(".hamburger-button .button");
  hamburgerButton.addEventListener('click',function(){
  	let hamburgerButtonUL = document.querySelector(".hamburger-button .list");
@@ -32,36 +33,11 @@ angka[2].forEach(function(i){
 	});	
 });
 
+// sosial media 
+let sosialMedia = document.querySelectorAll(".sosial-media ul li");
+sosialMedia.forEach(function(i){
+	i.addEventListener('click', function(){
+		i.classList.toggle('new');
+	});
+});
 
-
-
-
-// let warna = document.querySelectorAll(".pilihan-warna .warna");
-// let warnaSatu = document.querySelectorAll(".dua .warna");
-// warnaSatu.forEach(function(i){
-// 	i.addEventListener('click',function(){
-// 		let img = document.querySelectorAll(".card-img img");
-// 		img[1].setAttribute('src', 'img/' + i.className + ".png");
-// 	});
-// });
-
-
-// let warnaDua = document.querySelectorAll(".dua .warna");
-// warnaDua.forEach(function(i){
-// 	i.addEventListener('click',function(){
-// 		let img = document.querySelectorAll(".card-img img");
-// 		img[1].setAttribute('src', 'img/' + i.className + ".png");
-// 	});
-// });
-
-
-// let warnaTiga = document.querySelectorAll(".tiga .warna");
-// warnaTiga.forEach(function(i){
-// 	i.addEventListener('click',function(){
-// 		let img = document.querySelectorAll(".card-img img");
-// 		img[2].setAttribute('src', 'img/' + i.className + ".png");
-// 	});
-// });
-
-
-// done

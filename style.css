@@ -1,15 +1,16 @@
 *{margin: 0; padding: 0;}
-body {font-family:sans-serif; }
+body {font-family:sans-serif; overflow-x: hidden; background-color: #eaeaea;}
 @font-face{
 	font-family: 'pristina';
 	src:url('font/pristina.ttf') format('truetype');
 }
-.container {width: 90%;	margin: auto;}
+.container {width: 95%;	margin: auto;}
 .container-flex {display:flex; width:100%; height:50px; margin:auto; justify-content: space-between;}
 /*toggle hamburger*/
 
 nav .hamburger-button .button.no-margin span:nth-child(2){width: 20px; transform: translateX(7px);transition:.3s;}
 nav {
+	background-color: white;
 	display: flex;
 	align-items: center;
 	width: 100%;
@@ -79,7 +80,7 @@ nav .hamburger-button .header {
 	left: 35px;
 	top: 50%;
 }
-nav .hamburger-button .header h4{
+nav .hamburger-button .header a{
 	font-family: 'pristina';
 	font-size: 25px;
 	color: #303030;
@@ -287,7 +288,7 @@ nav .main .nav-icon span i:hover {color: #e43477;}
 }
 
 .sosial-media ul{
-	width: 200px;
+	width: 230px;
 	height: 200px;
 	display: flex;
 	justify-content: space-between;
@@ -297,17 +298,124 @@ nav .main .nav-icon span i:hover {color: #e43477;}
 	right: 0;
 }
 
+.sosial-media ul li.new { transform: translateX(0); transition: .3s;z-index: 9999;}
+.sosial-media ul li:nth-child(2){border-left:5px solid #70bdd6; }
+.sosial-media ul li:nth-child(3){border-left:5px solid salmon; }
 .sosial-media ul li {
+	box-shadow: 3px 3px 5px #aeaeae;
+	border-left: 5px solid blue;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	transition: .3s;
+	transform: translateX(180px);
 	width: 100%;
-	height: 40px;
+	height: 45px;
 	background-color: white;
-	line-height: 40px;
-	padding-left: 20px;
 	box-sizing: border-box;
 	list-style: none;
 }
 
+.sosial-media ul li span i {
+	background-color: #eaeaea;
+	width: 40px;
+	padding-left: 15px;
+	display: inline-block;
+	line-height: 45px;
+	font-size: 25px;
+	color: #333;
+}
+.sosial-media ul li a {
+	color: #333;
+	text-decoration: none;
+	font-size: 17px;
+	line-height: 30px;
+	padding-left: 15px;
+}
+
+/*profil*/
+.profil {
+	width: 100%;
+	height: 600px;
+	margin:20px auto;
+	display: flex;
+	justify-content: space-between;
+}
+/*min-profil*/
+.profil .min-profil {order: 1; width: 18%;background-color:white;}
+.profil .min-profil .header {background-color: #a08886; padding-left: 75px; color: #333; height: 40px; }
+
+/*bio*/
+.profil .bio { order: 2; background-color: white; width: 53%;}
+.profil .bio .header {background-color: #a08886; padding-left: 75px; color: #333; height: 40px; }
+
+.profil .bio .form table { font-size: 15px; }
+.profil .bio .form {margin-top: 20px;}
+.profil .bio .form textarea{ height: 80px; resize: none; padding-top: 5px;}
+.profil .bio .form table button {font-size: 15px; color:#333; width: 100px; height: 30px; background-color: #a08886; outline: none; border: none; cursor: pointer; box-shadow: 3px 3px 3px #aeaeae; font-weight: bold;}
+.profil .bio .form table input, textarea {
+	width: 100%;
+	height: 30px;
+	outline: none;
+	padding-left: 10px;
+	box-sizing: border-box;
+	font-size: 15px;
+	color: #333;
+}
+/*jenis kelamin*/
+.profil .bio .form table .jenisK {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 27px;
+}
+.profil .bio .form table .jenisK input{width: 17px; height: 17px;}
+.profil .bio .form table .jenisK label{margin-left: 5px;}
+
+/*tanggal lahir*/
+.profil .bio .form table .tanggalL{
+	display: flex;
+	justify-content: space-around;
+}
+.profil .bio .form table .tanggalL span select{width: 80px; }
 
 
+/*akun*/
+.profil .akun {order: 3; background-color: white; width: 27%; }
+.profil .akun .header {background-color: #a08886; padding-left: 75px; color: #333; height: 40px; }
+.profil .akun .img-header:hover {filter: brightness(.9);}
+.profil .akun .img-header {
+	width: 200px;
+	height: 200px;
+	background-color: #eaeaea;
+	margin:50px auto;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+}
 
+.profil .akun .img-header i{font-size:40px;line-height: 200px;color: #aeaeae;}
+.profil .akun .main-akun {
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding-left: 15px;
+	box-sizing: border-box;
+}
 
+.profil .akun .main-akun .nama{	display: flex;width: 95%;font-size: 15px;}
+.profil .akun .main-akun .nama .satu{width: 100px;}
+.profil .akun .main-akun .nama .tiga{padding-left: 10px;}
+.profil .akun .main-akun .nama .tiga button{
+	width: 100px;
+	height: 30px;
+	border:none;
+	outline: none;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #a08886;
+	color: #333;
+	cursor: pointer;
+	box-shadow: 3px 3px 3px #aeaeae;;
+}
