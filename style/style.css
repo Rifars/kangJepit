@@ -158,7 +158,7 @@ nav .main .nav-icon span i:hover {color: #e43477;}
 .hero {
 	width: 100%;
 	height: 500px;
-	background-image: url("hero.jpg");
+	background-image: url("../hero.jpg");
 	background-position: center 630px;
 	background-size: cover;
 }
@@ -424,6 +424,7 @@ nav .main .nav-icon span i:hover {color: #e43477;}
 	padding-left: 15px;
 }
 
+/* menu profil */
 /*profil*/
 .profil {
 	width: 100%;
