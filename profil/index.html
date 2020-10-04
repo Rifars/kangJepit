@@ -3,9 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../fontawesome/css/all.min.css">
 	<link rel="stylesheet" href="../style.css">
 	<link rel="stylesheet" href="../responsive.css">
-	<link rel="stylesheet" href="../fontawesome/css/all.min.css">
+	
 	<title>Profil</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
 				<ul class="list">
 					<li><a href="../index.html">Home</a></li>
 					<li><a href="index.html">Profil</a></li>
-					<li><a href="#">Notifikasi</a></li>
+					<li><a href="#" class="notifikasi">Notifikasi</a></li>
 					<li><a href="#">Favorit</a></li>
 					<li><a href="#">Keranjang</a></li>
 					<li><a href="#">Promo</a></li>
@@ -34,20 +35,19 @@
 			</div>
 			<div class="main">
 				<div class="nav-icon">
-					<span>
-						<a href=""><i class="fas fa-cart-plus"></i></a>
-					</span>
-					<span>
-						<a href=""><i class="fas fa-bell"></i></a>
-					</span>
-					<span>
-						<a href=""><i class="fa fa-user-circle"></i></a>	
-					</span>
+					<span><i class="fas fa-cart-plus"></i></span>
+					<span><i class="fas fa-bell"><span class="notif"></span></i></span>
+					<span><i class="fa fa-user-circle"></i></span>
 				</div>
 			</div>
 		</div>
 	</nav>
 	<!-- End navbar -->
+		<!-- notifikasi -->
+		<div class="isi-notifikasi">
+			<p>hello, selamat datang </p>
+		</div>
+		<!-- end notifikasi -->
 	<!-- profil -->
 	<div class="container">
 		<div class="profil">
@@ -154,7 +154,7 @@
 			<div class="bio">
 				<div class="header">
 					<!-- <h2>Profil</h2>
- -->				</div>
+ -->			</div>
 				<div class="form">
 					<table style="margin: auto;" width="95%" border="0">
 						<tr>
