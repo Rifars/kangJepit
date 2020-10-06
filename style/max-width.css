@@ -2,7 +2,7 @@
 
 }
 
-@media (max-width:670px){
+@media only screen and (max-width:670px){
     /* nav */
     nav .hamburger-button{
         width: 100%;
@@ -47,3 +47,4 @@
         padding-bottom:50px;
     }
 }
+
