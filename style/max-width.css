@@ -1,0 +1,25 @@
+@media (max-width:1000px){
+
+}
+
+@media (max-width:670px){
+    /* nav */
+    nav .hamburger-button{
+        width: 100%;
+    }
+    nav .hamburger-button ul{
+        width: 100%;
+        transform: translateX(-420px);
+	    height: 460px;
+    }
+    nav .hamburger-button .header{
+        left: 0;
+        width: 100%;
+    }
+    nav .hamburger-button .button{
+        transform: translateX(35px);
+    }
+    nav .main .nav-icon {
+        display: none;
+    }
+}

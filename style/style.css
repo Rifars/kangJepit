@@ -6,7 +6,7 @@ body {font-family:sans-serif; overflow-x: hidden; background-color: #eaeaea;}
 }
 @font-face{
 	font-family: 'pristina';
-	src:url('font/pristina.ttf') format('truetype');
+	src:url('../font/pristina.TTF') format('truetype');
 }
 .container {width: 95%;	margin: auto;}
 .container-flex {display:flex; width:100%; height:50px; margin:auto; justify-content: space-between;}
@@ -19,8 +19,10 @@ nav {
 	align-items: center;
 	width: 100%;
 	height: 50px;
+	z-index: 1;
 }
 nav .hamburger-button {
+	z-index: 1;
 	display: flex;
 	transition: .3s; 
 	width: 40%; 
