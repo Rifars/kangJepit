@@ -22,7 +22,7 @@
     nav .main .nav-icon {
         display: none;
     }
-    /* profil  */
+    /* profil  min profil*/
     .profil {
         flex-wrap: wrap;
     }
@@ -39,5 +39,11 @@
     }
     .profil .min-profil .header .edit-nama .edit a{
         font-size: 12px;
+    }
+    .profil .min-profil .isi-profil{
+        width: 100%;
+         margin: 0;
+        padding-top: 20px;
+        padding-bottom:50px;
     }
 }
