@@ -46,5 +46,60 @@
         padding-top: 20px;
         padding-bottom:50px;
     }
+    .bio {
+        display: none;
+    }
 }
 
+
+@media only screen and (max-width:370px){
+    .container {
+        width: 100%;
+    }
+    /* nav */
+    nav .hamburger-button{
+        width: 100%;
+    }
+    nav .hamburger-button ul{
+        width: 100%;
+        transform: translateX(-420px);
+	    height: 460px;
+    }
+    nav .hamburger-button .header{
+        left: 0;
+        width: 100%;
+    }
+    nav .hamburger-button .button{
+        transform: translateX(35px);
+    }
+    nav .main .nav-icon {
+        display: none;
+    }
+    /* profil  min profil*/
+    .profil {
+        flex-wrap: wrap;
+    }
+    .profil .prof {
+        width: 100%;
+        margin-bottom: 50px;
+        box-shadow: 0 0 5px #aaaa;
+    }
+    .profil .min-profil .header{
+        justify-content: space-center;
+    }
+    .profil .min-profil .header .edit-nama{
+        width: 70%;
+    }
+    .profil .min-profil .header .edit-nama .edit a{
+        font-size: 12px;
+    }
+    .profil .min-profil .isi-profil{
+        width: 100%;
+         margin: 0;
+        padding-top: 20px;
+        padding-bottom:50px;
+    }
+    .bio {
+        display: none;
+    }
+}
