@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 @media (max-width:1000px){
 
 }
@@ -10,7 +13,7 @@
     nav .hamburger-button ul{
         width: 100%;
         transform: translateX(-420px);
-	    height: 460px;
+	    height: 415px;
     }
     nav .hamburger-button .header{
         left: 0;
@@ -22,6 +25,33 @@
     nav .main .nav-icon {
         display: none;
     }
+
+    /*Bagian Hero*/
+    .hero {
+        width: 100%;
+        height: 400px;
+        background-image: url("../hero.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    /*Sosial media yang ada di hero*/
+    .sosial-media ul {
+        display: none;
+    }
+
+    /*Bagian pencarian*/
+    .search {
+        width: 80%;
+    }
+    .search .colom {
+        top: 200px;
+    }
+    .search .colom input {
+        width: 300px;
+    }
+
     /* profil  min profil*/
     .profil {
         flex-wrap: wrap;
@@ -42,60 +72,7 @@
     }
     .profil .min-profil .isi-profil{
         width: 100%;
-         margin: 0;
-        padding-top: 20px;
-        padding-bottom:50px;
-    }
-    .bio {
-        display: none;
-    }
-}
-
-
-@media only screen and (max-width:370px){
-    .container {
-        width: 100%;
-    }
-    /* nav */
-    nav .hamburger-button{
-        width: 100%;
-    }
-    nav .hamburger-button ul{
-        width: 100%;
-        transform: translateX(-420px);
-	    height: 460px;
-    }
-    nav .hamburger-button .header{
-        left: 0;
-        width: 100%;
-    }
-    nav .hamburger-button .button{
-        transform: translateX(35px);
-    }
-    nav .main .nav-icon {
-        display: none;
-    }
-    /* profil  min profil*/
-    .profil {
-        flex-wrap: wrap;
-    }
-    .profil .prof {
-        width: 100%;
-        margin-bottom: 50px;
-        box-shadow: 0 0 5px #aaaa;
-    }
-    .profil .min-profil .header{
-        justify-content: space-center;
-    }
-    .profil .min-profil .header .edit-nama{
-        width: 70%;
-    }
-    .profil .min-profil .header .edit-nama .edit a{
-        font-size: 12px;
-    }
-    .profil .min-profil .isi-profil{
-        width: 100%;
-         margin: 0;
+        margin: 0;
         padding-top: 20px;
         padding-bottom:50px;
     }
