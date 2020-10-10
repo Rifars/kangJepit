@@ -6,6 +6,7 @@
 }
 
 @media only screen and (max-width:670px){
+    /* home */
     /* nav */
     nav .hamburger-button{
         width: 100%;
@@ -51,6 +52,32 @@
     .search .colom input {
         width: 300px;
     }
+
+    /* fitur */
+    .fitur .main {
+        flex-direction: column;
+        height: 400px;
+        width: 100%;
+        justify-content: space-between;
+        position: relative;
+    }
+    .fitur .main .voucher{
+        width: 100%;
+        display :flex;   
+    }
+    .fitur .main .voucher .main-vch {	
+        background-color:#f08792;
+        width: 100%;
+        height: 180px;
+        border-radius:10px;
+        margin: 0;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow:none;
+    }
+
+
 
     /* profil  min profil*/
     .profil {
