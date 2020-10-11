@@ -6,6 +6,7 @@
 }
 
 @media only screen and (max-width:670px){
+    
     /* home */
     /* nav */
     nav .hamburger-button{
@@ -76,6 +77,56 @@
         justify-content: center;
         box-shadow:none;
     }
+    /* card atau bagian populer */
+    .populer {
+        height: auto;
+    }
+    .card-flex{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .card-flex .card {
+        width: 90%;
+        height: 500px;
+        margin-bottom: 50px;
+    }
+    .card .header h3{
+        font-size: 27px;
+    }
+    /* card-main .card-img {width: 80%;} */
+    .card .card-main{
+        height: 330px;
+    }
+    .card .card-header h3 {
+        font-size: 20px;
+        margin-top: 35px;
+        margin-bottom: -10px;
+    }
+    .card-main .card-img img{
+        height: 280px;
+        width: 280px;
+        margin-right: -25px;
+    }
+    .card-main .pilihan-warna .warna{
+        border:2px solid rgba(255,255,255,0);
+        cursor: pointer;
+        background-color: #009888;
+        width: 45px;
+        height: 45px;
+        margin:15px;
+    }
+    .card .card-footer .button-beli button{
+        width: 135px;
+	    height: 45px;
+    }
+    .card-footer .icon-tambahan i {	font-size: 27px;}
+    .card .harga {
+        font-size: 20px;
+        margin-top: -10px;
+    }
+
+
 
 
 

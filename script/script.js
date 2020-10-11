@@ -26,7 +26,7 @@ let card = document.querySelector(".card-flex");
 			img.classList.add('animasi');
 			setTimeout(() => {
 				img.classList.remove('animasi');
-			}, 200);
+			}, 400);
 		}
 	});
 
