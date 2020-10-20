@@ -593,6 +593,34 @@ nav .main .nav-icon span i:hover {color: #e43477;}
 	box-shadow: 3px 3px 3px #aeaeae;;
 }
 
+
+/*Promo*/
+.promo {
+	width: 100%;
+	margin: auto;
+	margin-top: 40px;
+}
+
+.main-prom {
+	border:1px solid #333;
+	width: 80%;
+	height: 300px;
+	margin: auto;
+}
+
 /*tentang*/
 .tentang {width:100%;background-color: #4b3446;margin-top: 50px;}
-.tentang .header{text-align: center; color:white;} 
+.tentang .header{text-align: center; color:white; margin-bottom: 40px; padding-top: 35px;} 
+.tentang .main {
+	margin:auto;
+	padding-bottom: 40px;
+	color: white;
+	width: 80%;
+	text-align: center;
+
+}
+
+.tentang .source {
+	
+}
+
